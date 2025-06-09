@@ -40,24 +40,6 @@
   justify-content: center;
 }
  
-.home-burger-menu {
-  display: none;
-  align-items: flex-start;
-  border-radius: var(--dl-layout-radius-radius4);
-  flex-direction: column;
-}
- 
-.home-icon10 {
-  width: 36px;
-  height: 36px;
-}
- 
-.home-links-container1 {
-  display: flex;
-  align-items: flex-start;
-  flex-direction: row;
-}
- 
 .home-link1 {
   margin-right: var(--dl-layout-space-tripleunit);
   text-decoration: none;
@@ -101,12 +83,12 @@
   flex-direction: column;
 }
  
-.home-icon12 {
+.home-icon10 {
   width: 24px;
   height: 24px;
 }
  
-.home-links-container2 {
+.home-links-container {
   display: flex;
   align-items: flex-start;
   flex-direction: column;
@@ -146,24 +128,23 @@
 }
  
 .home-content-container1 {
-  width: 684px;
-  border: 2px dashed rgba(120, 120, 120, 0.4);
-  height: 472px;
+  width: 644px;
+  height: 624px;
   display: flex;
   max-width: var(--dl-layout-size-maxcontent);
-  margin-top: var(--dl-layout-space-fiveunits);
   align-items: center;
-  margin-left: var(--dl-layout-space-tripleunit);
-  padding-top: var(--dl-layout-space-tenunits);
+  margin-left: var(--dl-layout-space-unit);
+  padding-top: var(--dl-layout-space-fiveunits);
+  margin-right: var(--dl-layout-space-tripleunit);
   padding-left: var(--dl-layout-space-tripleunit);
-  margin-bottom: var(--dl-layout-space-fiveunits);
   padding-right: var(--dl-layout-space-tripleunit);
   flex-direction: column;
-  padding-bottom: var(--dl-layout-space-tenunits);
+  padding-bottom: var(--dl-layout-space-fiveunits);
   background-size: cover;
   justify-content: center;
-  background-image: url('https://raw.githubusercontent.com/bmacken03/bmacken03.github.io/refs/heads/main/assets/IMG-20250411-WA0008.jpg');
-  background-position: top right;
+  background-image: url('https://raw.githubusercontent.com/bmacken03/bmacken03.github.io/refs/heads/main/assets/unnamed.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
 }
  
 .home-content-container2 {
@@ -173,7 +154,9 @@
   max-width: var(--dl-layout-size-maxcontent);
   margin-top: var(--dl-layout-space-fiveunits);
   align-items: center;
+  margin-left: var(--dl-layout-space-tripleunit);
   padding-top: var(--dl-layout-space-tenunits);
+  margin-right: var(--dl-layout-space-unit);
   padding-left: var(--dl-layout-space-tripleunit);
   margin-bottom: var(--dl-layout-space-fiveunits);
   padding-right: var(--dl-layout-space-tripleunit);
@@ -194,8 +177,8 @@
   margin-bottom: var(--dl-layout-space-fiveunits);
 }
  
-.home-text1 {
-  color: var(--dl-color-gray-700);
+.home-text10 {
+  color: var(--dl-color-gray-500);
   text-align: center;
   margin-bottom: var(--dl-layout-space-fiveunits);
 }
@@ -241,7 +224,7 @@
   display: contents;
 }
  
-.home-icon14 {
+.home-icon12 {
   margin-top: var(--dl-layout-space-halfunit);
   margin-right: var(--dl-layout-space-halfunit);
   margin-bottom: var(--dl-layout-space-halfunit);
@@ -252,7 +235,7 @@
   display: contents;
 }
  
-.home-icon16 {
+.home-icon14 {
   margin-top: var(--dl-layout-space-halfunit);
   margin-right: var(--dl-layout-space-halfunit);
   margin-bottom: var(--dl-layout-space-halfunit);
@@ -263,7 +246,7 @@
   display: contents;
 }
  
-.home-icon18 {
+.home-icon16 {
   margin-top: var(--dl-layout-space-halfunit);
   margin-bottom: var(--dl-layout-space-halfunit);
   text-decoration: none;
@@ -275,7 +258,7 @@
   flex-direction: row;
 }
  
-.home-icon20 {
+.home-icon18 {
   width: 24px;
   height: 24px;
   margin-right: var(--dl-layout-space-halfunit);
@@ -286,27 +269,34 @@
     flex-direction: column-reverse;
   }
   .home-content-container1 {
+    width: 544px;
+    height: 518px;
+    margin-top: var(--dl-layout-space-unit);
+    margin-left: var(--dl-layout-space-tripleunit);
+    margin-right: var(--dl-layout-space-tripleunit);
+    padding-left: var(--dl-layout-space-fourunits);
+    margin-bottom: var(--dl-layout-space-unit);
+    padding-right: var(--dl-layout-space-fourunits);
     flex-direction: column-reverse;
+    background-image: url('https://raw.githubusercontent.com/bmacken03/bmacken03.github.io/refs/heads/main/assets/unnamed.jpg');
+    background-position: center;
   }
   .home-content-container2 {
+    height: 427px;
+    margin-top: 0px;
+    margin-left: 0px;
+    padding-top: 0px;
+    margin-right: 0px;
+    padding-left: var(--dl-layout-space-tripleunit);
+    margin-bottom: 0px;
+    padding-right: var(--dl-layout-space-tripleunit);
     flex-direction: column-reverse;
+    padding-bottom: 0px;
   }
   .home-hero-text {
     width: 80%;
-  }
-}
- 
-@media(max-width: 767px) {
-  .home-burger-menu {
-    display: flex;
-    padding: var(--dl-layout-space-halfunit);
-    background-color: var(--dl-color-gray-black);
-  }
-  .home-icon10 {
-    fill: var(--dl-color-gray-white);
-  }
-  .home-links-container1 {
-    display: none;
+    align-items: center;
+    justify-content: center;
   }
 }
  
