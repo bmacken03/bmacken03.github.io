@@ -132,11 +132,13 @@
   height: 624px;
   display: flex;
   max-width: var(--dl-layout-size-maxcontent);
+  box-shadow: 5px 5px 10px 0px #d4d4d4;
   align-items: center;
   margin-left: var(--dl-layout-space-unit);
   padding-top: var(--dl-layout-space-fiveunits);
   margin-right: var(--dl-layout-space-tripleunit);
   padding-left: var(--dl-layout-space-tripleunit);
+  border-radius: var(--dl-layout-radius-radius8);
   padding-right: var(--dl-layout-space-tripleunit);
   flex-direction: column;
   padding-bottom: var(--dl-layout-space-fiveunits);
@@ -266,27 +268,30 @@
  
 @media(max-width: 991px) {
   .home-hero {
+    margin-top: 0px;
+    margin-bottom: 0px;
     flex-direction: column-reverse;
   }
   .home-content-container1 {
     width: 544px;
     height: 518px;
-    margin-top: var(--dl-layout-space-unit);
-    margin-left: var(--dl-layout-space-tripleunit);
-    margin-right: var(--dl-layout-space-tripleunit);
-    padding-left: var(--dl-layout-space-fourunits);
-    margin-bottom: var(--dl-layout-space-unit);
-    padding-right: var(--dl-layout-space-fourunits);
+    overflow: hidden;
+    max-width: auto;
+    margin-left: var(--dl-layout-space-fourunits);
+    margin-right: var(--dl-layout-space-fourunits);
+    padding-left: var(--dl-layout-space-fiveunits);
+    margin-bottom: var(--dl-layout-space-fiveunits);
+    padding-right: var(--dl-layout-space-fiveunits);
     flex-direction: column-reverse;
     background-image: url('https://raw.githubusercontent.com/bmacken03/bmacken03.github.io/refs/heads/main/assets/unnamed.jpg');
     background-position: center;
   }
   .home-content-container2 {
     height: 427px;
-    margin-top: 0px;
-    margin-left: 0px;
+    max-width: auto;
+    margin-top: var(--dl-layout-space-doubleunit);
     padding-top: 0px;
-    margin-right: 0px;
+    margin-right: var(--dl-layout-space-tripleunit);
     padding-left: var(--dl-layout-space-tripleunit);
     margin-bottom: 0px;
     padding-right: var(--dl-layout-space-tripleunit);
@@ -300,16 +305,30 @@
   }
 }
  
+@media(max-width: 767px) {
+  .home-content-container1 {
+    padding: 0px;
+  }
+}
+ 
 @media(max-width: 479px) {
   .home-hero {
     padding-top: var(--dl-layout-space-fourunits);
     padding-bottom: var(--dl-layout-space-fourunits);
   }
   .home-content-container1 {
+    width: 423px;
+    overflow: hidden;
+    flex-wrap: wrap;
+    max-width: 100%;
+    align-self: center;
+    align-items: center;
     padding-top: var(--dl-layout-space-fiveunits);
     padding-bottom: var(--dl-layout-space-fiveunits);
+    justify-content: center;
   }
   .home-content-container2 {
+    max-width: 100%;
     padding-top: var(--dl-layout-space-fiveunits);
     padding-bottom: var(--dl-layout-space-fiveunits);
   }
